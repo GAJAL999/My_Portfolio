@@ -1,0 +1,331 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Poppins',sans-serif;
+}
+nav{
+  background-color: #000;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+nav ul{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav li{
+  height: 50px;
+}
+nav a{
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #f0f0f0;
+}
+nav a:hover{
+  box-shadow: 0 0 5px rgb(112, 128, 144),
+  0 0 25px rgb(112, 128, 144), 0 0 50px rgb(112, 128, 144),
+  0 0 100px rgb(112, 128, 144), 0 0 200px rgb(112, 128, 144)
+}
+nav li:first-child{
+  margin-right: auto;
+}
+.sidebar{
+  position: fixed;
+  top: 0; 
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sidebar li{
+  width: 100%;
+}
+.sidebar a{
+  width: 100%;
+}
+.menu-button{
+  display: none;
+}
+@media(max-width: 800px){
+  .hideOnMobile{
+    display: none;
+  }
+  .menu-button{
+    display: block;
+  }
+}
+@media(max-width: 400px){
+  .sidebar{
+    width: 100%;
+  }
+}
+
+
+
+.home{
+  position: relative;
+  width: 100%;
+  justify-content: space-between;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  padding: 70px 5% 0;
+}
+
+.home-content {
+  text-align: left; /* Left align text */
+  flex: 1;
+}
+
+.home img {
+  width: 300px; /* Adjust width as needed */
+  height: 325px; /* Adjust height as needed */
+  object-fit: cover; /* Ensure image covers the box */
+  margin-left: 15px; /* Align image to the right */
+  border-radius: 0; /* Remove rounded corners to keep it rectangular */
+  margin-top: 5px;
+}
+
+.home-content h3{
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.home-content h1{
+  font-size: 56px;
+  font-weight: 700;
+  margin: -3px 0;
+}
+
+.home-content p{
+  font-size: 25px;
+  margin: 20px 0;
+  line-height: 1.6;
+
+}
+
+.hero-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px; /* Adjust as needed */
+  margin-left:0px;
+  margin-right: 850px;
+}
+
+.hero-icons i{
+  display: inline-block;
+  font-size: 24px;
+  color: rgb(112, 128, 144);
+  margin-right: 20px;
+  transition: all .6s ease;
+  margin-bottom: 40px;
+}
+
+.hero-icons a {
+  margin: 30 0px; /* Adjust as needed */
+}
+.hero-icons i:hover{
+  transform: rotate3d(0, 0, 1, 360deg);
+  color: rgb(112, 128, 144);
+}
+
+.btn-box{
+  display: inline-block;
+  padding: 12px 28px;
+  background: #000;
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-box:hover{
+  box-shadow: 0 0 5px rgb(112, 128, 144),
+  0 0 25px rgb(112, 128, 144), 0 0 50px rgb(112, 128, 144),
+  0 0 100px rgb(112, 128, 144), 0 0 200px rgb(112, 128, 144)
+}
+
+
+/*SKILLS*/
+
+
+.skills{
+  padding: 70px 5% 0;
+  height: 5vh;
+}
+
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.container {
+  width: 50%; /* Full width */
+  background-color: #ddd; /* Grey background */
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: #000; /* White text color */
+  text-align: left;
+}
+
+.html {width: 90%; background-color: #04AA6D;} /* Green */
+.css {width: 80%; background-color: #2196F3;} /* Blue */
+.js {width: 65%; background-color: #f44336;} /* Red */
+.kali {width: 70%; background-color: #808080;} /* Dark Grey */
+.sql {width: 80%; background-color: #F6FB7A;} /* Yellow */
+
+.skills h1{
+  font-size: 40px;
+}
+
+.skills p{
+  font-size: 20px;
+  font-weight: bold;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* PROJECTS */
+
+
+.projects{
+  padding: 70px 5% 0;
+  height: 30vh;
+}
+
+.projects h1{
+  font-size: 35px;
+}
+
+.projects .calculator img {
+  width: 550px; /* Adjust width as needed */
+  height: 300px; /* Adjust height as needed */
+}
+
+.projects .landing_page img {
+  width: 800px; /* Adjust width as needed */
+  height: 400px; /* Adjust height as needed */
+}
+
+.projects h3{
+  font-size: 25px;
+  font-weight: bold;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.projects p{
+  font-size: 20px;
+  font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* CONTACT ME*/
+
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.contact-info {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact-info h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.contact-icons {
+  display: flex;
+  align-items: center;
+}
+
+.contact-icons a {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin-right: 10px;
+}
+
+.contact-form {
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  background: #333;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.contact-form textarea {
+  height: 150px;
+  resize: none;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 15px;
+  background: var(--main-color);
+  border: none;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  text-align: center;
+}
+
+.contact-form button:hover {
+  background: rgb(112, 128, 144),;
+}
+
+.success-message {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: var(--main-color);
+  text-align: center;
+}
+.footer{
+  align-items: center;
+  color: var(--main-color);
+  margin-left: 700px;
+}
